@@ -197,7 +197,7 @@ header#unccedu-header a {
 header#unccedu-header .container {
     background: url("http://www.uncc.edu/sites/all/themes/unccedu/images/header-logo-watermark.png") repeat scroll center center #ffffff;
     height: 100px;
-    width: 970px;
+    max-width: 970px;
 }
 
 
@@ -205,29 +205,26 @@ header#unccedu-header .container {
 
 a.site-title {
     font-family: times,"times new roman",serif;
-    font-size: 1.25em;
+    font-size: 1.85rem;
+    line-height:1.0rem;
     text-align: left;
 }
 
 
 #header-utility-links {
-    float: right;
     list-style-type: none;
-    margin-bottom: 0px;
+    margin-bottom: 7px;
 }
 #header-utility-links li {
     font-family: arial,helvetica,sans-serif;
     font-size: 1.3rem;
     line-height: 1.45rem;
     text-align: right;
-    width: 164px;
+
 }
 .header-utility-search-wrapper {
     float: right;
 }
-
-
-form.site-search{margin-top:5px;}
 
 
 .form-control.utility-search-input{
@@ -274,44 +271,26 @@ form.site-search{margin-top:5px;}
 /****/
 
 footer.container {
-    background: url("http://www.uncc.edu/sites/all/themes/unccedu/images/footer-bg.png") repeat-x scroll left top rgba(0, 0, 0, 0);
-    height: 110px;
+    //background: url("http://www.uncc.edu/sites/all/themes/unccedu/images/footer-bg.png") repeat-x scroll left top #fff;
+    //height: 110px;
+    padding-bottom:2.0rem;
 }
+#footer-utility-bar{background:#00703c; min-height:35px;}
+#footer-utility-bar ul {margin-bottom:0px;}
 
-#footer-utility-bar {
-    height: 36px;
-}
-#footer-utility-bar ul {
-    float: left;
-    height: 32px;
-    list-style-type: none;
-    margin-bottom: 0;
-    padding-left: 20px;
-    padding-top: 0;
-}
-#footer-utility-bar ul li {
-    display: block;
-    float: left;
-    font-family: arial,helvetica,sans-serif;
-    font-size: 0.95em;
-    height: 32px;
-    margin-right: 24px;
-}
 #footer-utility-bar ul li a {
     color: #ffffff;
-    display: inline-block;
-    height: 32px;
-    line-height: 32px;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 1.25rem;
     text-decoration: none;
 }
 
 
-#footer-university-info #university-name {
+#footer-university-info #university-name a {
     color: #00703c;
     font-family: arial,helvetica,sans-serif !important;
     font-size: 14px;
     font-weight: bold;
-    margin-top: 5px;
     text-transform: none !important;
 }
 #footer-university-info #university-address,
@@ -327,7 +306,7 @@ footer.container {
     color: #006633;
     text-decoration: underline;
 }
-#footer-follow p#social-title {
+#footer-follow #social-title {
     border-bottom: 0 none;
     color: #666666 !important;
     font-family: arial,helvetica,sans-serif;
@@ -335,7 +314,6 @@ footer.container {
     font-weight: bold;
     margin-bottom: 5px;
     margin-right: 20px;
-    margin-top: 10px;
 }
 div.social-icons,
 div.social-icons a {
@@ -371,22 +349,22 @@ div.social-icons.youtube a {
           <div class="container">
             <div id="unccedu-header-watermark" class="row vertical-align">
 
-              <div id="uncc-logo" class="col-md-2">
-                <img alt="Home" src="http://www.uncc.edu/sites/all/themes/unccedu/logo.png">
+              <div id="uncc-logo" class="col-sm-4 col-md-2">
+                <img class="img-responsive" alt="Home" src="http://www.uncc.edu/sites/all/themes/unccedu/logo.png">
               </div> <!-- /#uncc-logo -->
 
-              <div id="branding" class="col-md-7">
-                <div id="site-name-wrapper">
-                  <div id="site-name">
+              <div id="branding" class="col-sm-8 col-md-5">
+
+
                       <a rel="home" title="Home" href="/" class="site-title"><span>UNC Charlotte Urban Institute</span></a>
-                      <p class="hidden-phone" id="subbrand-link">
+                      <p class="hidden-xs" id="subbrand-link">
                         <a title="Division of Academic Affairs" href="http://provost.uncc.edu">Division of Academic Affairs</a>
                       </p>
-                    </div> <!-- /#site-name -->
-                </div> <!-- /#site-name-wrapper -->
+
+
               </div>
 
-              <div id="header-utility" class="col-md-3">
+              <div id="header-utility" class="col-md-5 hidden-sm">
                 <ul id="header-utility-links">
                   <li><a href="/">Home</a></li>
                   <li><a href="/">Contact Us</a></li>
@@ -485,20 +463,20 @@ div.social-icons.youtube a {
     </div><!-- /.container -->
 
     <footer class="container">
-      <div class="row" id="footer-utility-bar">
+      <div class="row vertical-align" id="footer-utility-bar">
 
-            <div class="col-md-9" id="footer-links">
-              <ul>
-                <li><img src="http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/crown-small.png" alt="Small UNC Charlotte Crown Logo" style="margin-top: 7px;"></li>
+            <div class="col-md-9 hidden-xs" id="footer-links">
+              <ul class="list-inline">
+                <li><img src="http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/crown-small.png" alt="Small UNC Charlotte Crown Logo"></li>
                 <li><a href="http://www.unccharlottealerts.com" target="_blank" title="Alerts and Advisories at UNC Charlotte">Alerts</a></li>
                 <li><a href="https://jobs.uncc.edu" title="Jobs at UNC Charlotte">Jobs</a></li>
                 <li><a href="http://www.uncc.edu/makeagift" title="Make a gift to UNC Charlotte">Make a Gift</a></li>
                 <li><a href="http://www.uncc.edu/directions" title="Directions to UNC Charlotte">Maps / Directions</a></li>
                 <li><a href="https://textonly.uncc.edu?1343005729" title="View this page as text only">Text Only</a></li>
-                <li><img width="20" height="20" src="http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/accessibility-icon.png" alt="accessibility icon" title="" style="display: inline-block; margin: 7px 6px 0 0; vertical-align: middle;"><a href="http://www.uncc.edu/accessibility" title="Accessibility resources at UNC Charlotte" style="vertical-align: top;">Accessibility</a></li>
+                <li><img width="20" height="20" src="http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/accessibility-icon.png" alt="accessibility icon" title="accessibilty icon"> <a href="http://www.uncc.edu/accessibility" title="Accessibility resources at UNC Charlotte">Accessibility</a></li>
               </ul>
             </div> <!--/#footer-links-->
-            <div class="col-md-3" id="footer-search">
+            <div class="col-md-3 hidden-xs" id="footer-search">
               <form class="form-inline site-search" method="get" action="http://search.uncc.edu/website/" >
                 <div class="form-group">
                   <input type="text" class="form-control utility-search-input" placeholder="Search uncc.edu" aria-label="Search">
@@ -511,13 +489,13 @@ div.social-icons.youtube a {
       <div class="row">
 
 
-                <div class="col-md-6 hidden-phone" id="footer-university-info">
+                <div class="col-md-8" id="footer-university-info">
                       <div id="university-name"><a href="http://www.uncc.edu">The University of North Carolina at Charlotte</a></div>
-                      <div id="university-address">9201 University City Blvd, Charlotte, NC 28223-0001 <strong>·</strong>704-687-8622</div>
-                      <div id="university-legal">&copy;&nbsp;2015&nbsp;UNC&nbsp;Charlotte&nbsp;|&nbsp;All&nbsp;Rights&nbsp;Reserved&nbsp;|&nbsp;<a href="http://legal.uncc.edu/termsofuse" title="">Terms&nbsp;of&nbsp;Use</a>&nbsp;|&nbsp;<a href="http://legal.uncc.edu/policies" title="">University&nbsp;Policies</a>&nbsp;|&nbsp;<a href="/contact" title="Contact Us">Contact&nbsp;Us</a></div>
+                      <div id="university-address">9201 University City Blvd, Charlotte, NC 28223-0001 - 704-687-8622</div>
+                      <div id="university-legal">&copy; 2015 UNC Charlotte | All Rights Reserved | <a href="http://legal.uncc.edu/termsofuse" title="">Terms of Use</a> | <a href="http://legal.uncc.edu/policies" title="">University Policies</a> | <a href="/contact" title="Contact Us">Contact Us</a></div>
                 </div> <!-- #footer-name -->
-                <div class="col-md-3 col-md-offset-3" id="footer-follow">
-                  <p id="social-title">Follow UNC Charlotte</p>
+                <div class="col-md-3 col-md-offset-1" id="footer-follow">
+                  <div id="social-title">Follow UNC Charlotte</div>
                   <div class="facebook social-icons"><a href="http://www.facebook.com/UNCCharlotte" title="Facebook" target="_blank"><img width="20" height="20" src="http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/1x1.gif" alt="Facebook"></a></div>
                   <div class="blog social-icons"><a href="http://unccltnews.blogspot.com/" title="Blogger" target="_blank"><img width="20" height="20" src="http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/1x1.gif" alt="Blogger"></a></div>
                   <div class="twitter social-icons"><a href="http://twitter.com/UNCCharlotte" title="Twitter" target="_blank"><img width="20" height="20" src="http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/1x1.gif" alt="Twitter"></a></div>
