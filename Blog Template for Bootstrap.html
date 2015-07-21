@@ -264,10 +264,62 @@ a.site-title {
     overflow: hidden;
 }
 
+/**************************************
+
+NAV tabs
+
+*************************************/
 .main-nav,
 .main-nav .container-fluid,
 .main-nav .navbar-collapse{padding:0px;}
 .main-nav .navbar{margin-bottom:0px;border:none;}
+
+/*********/
+@media (min-width: 768px) {
+
+
+.main-nav{background-color:#fff;}
+.main-nav .navbar-default {background: none;}
+
+.navbar-tabs {
+    margin: auto;
+    //max-width: 960px;
+    position: relative;
+    top: -47px;
+    z-index: 499;
+}
+
+
+.navbar-tabs .nav-justified > li > a {
+    background-color:rgba(240, 255, 255, 0.8);
+    margin-right:4px !important;
+    //border-right: 1px solid rgba(255, 245, 255, .7);
+    color: #555555 !important;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 0.85em;
+}
+
+.navbar-tabs .nav > li > a {
+  padding:15px 0;
+}
+
+
+.navbar-tabs .nav-justified > li:last-child > a {
+    margin-right:0px !important;
+}
+
+} /* end min-width */
+
+
+
+
+
+
+
+
+
+
+
 
 .main-content{background-color:#fff;}
 
@@ -402,8 +454,8 @@ div.social-icons.youtube a {
 
 
           <div class="container main-nav">
-
-            <nav class="navbar navbar-default">
+            <!-- nav class="navbar-default" -->
+            <nav class="navbar navbar-default navbar-tabs">
                     <div class="container-fluid">
                       <div class="navbar-header" style="padding-right:15px;">
                         <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
@@ -416,13 +468,13 @@ div.social-icons.youtube a {
                       <div class="navbar-collapse collapse" id="navbar">
                         <ul class="nav nav-justified">
                           <li class="active"><a href="#">Home</a></li>
-                          <li><a href="#">NAV</a></li>
-                          <li><a href="#">NAV</a></li>
-                          <li><a href="#">NAV</a></li>
-                          <li><a href="#">NAV</a></li>
-                          <li><a href="#">NAV</a></li>
-                          <li><a href="#">NAV</a></li>
-
+                          <li><a href="#">Our region</a></li>
+                          <li><a href="#">Regional data</a></li>
+                          <li><a href="#">Issues</a></li>
+                          <li><a href="#">Articles</a></li>
+                          <li><a href="#">Programs</a></li>
+                          <li><a href="#">Resources</a></li>
+                          <li><a href="#">About us</a></li>
                         </ul>
 
                       </div><!--/.nav-collapse -->
