@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://getbootstrap.com/examples/blog/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>Blog Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./Blog Template for Bootstrap_files/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+
+/*
+ * Globals
+ */
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  background-color: #428bca;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+/* Nav links */
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+  color: #fff;
+}
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 60px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+
+
+
+
+
+/* NEW */
+/* GLOBAL */
+.vertical-align {
+  display: flex;
+  align-items: center;height:100%
+}
+
+
+
+body{background-color:#dddddd;}
+
+
+header#unccedu-header {
+    height: 100px;
+    color:#fff;
+    background: url("http://www.uncc.edu/sites/all/themes/unccedu/images/header-bg.png") repeat-x scroll center top #ffffff;
+}
+header#unccedu-header a {
+  color:#fff;
+}
+header#unccedu-header .container {
+    background: url("http://www.uncc.edu/sites/all/themes/unccedu/images/header-logo-watermark.png") repeat scroll center center #ffffff;
+    height: 100px;
+    max-width: 970px;
+}
+
+
+
+
+a.site-title {
+    font-family: times,"times new roman",serif;
+    font-size: 1.85rem;
+    line-height:1.0rem;
+    text-align: left;
+}
+
+
+#header-utility-links {
+    list-style-type: none;
+    margin-bottom: 7px;
+}
+#header-utility-links li {
+    font-family: arial,helvetica,sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.45rem;
+    text-align: right;
+
+}
+.header-utility-search-wrapper {
+    float: right;
+}
+
+
+.form-control.utility-search-input{
+  border-radius: 0px;
+  border: medium none;
+  font-size: 13px;
+  height: 19px;
+  padding: 0 17px 1px 6px;
+  width: 135px;
+  float:left;
+}
+.utility-search-button {
+    border: 0 none;
+    border-radius: 0px;
+    display: inline-block;
+    height: 19px;
+    margin: 0;
+    outline: medium none;
+    padding: 0;
+    vertical-align: top;
+    width: 19px;
+    float:left;
+}
+
+
+
+
+
+
+/****/
+
+
+.banner-wrapper {
+    margin: auto;
+    max-height: 400px;
+    max-width: 1040px;
+    overflow: hidden;
+}
+
+/**************************************
+
+NAV tabs
+
+*************************************/
+.main-nav,
+.main-nav .container-fluid,
+.main-nav .navbar-collapse{padding:0px;}
+.main-nav .navbar{margin-bottom:0px;border:none;}
+
+/*********/
+@media (min-width: 768px) {
+
+
+.main-nav{background-color:#fff;}
+.main-nav .navbar-default {background: none;}
+
+.navbar-tabs {
+    margin: auto;
+    //max-width: 960px;
+    position: relative;
+    top: -47px;
+    z-index: 499;
+}
+
+
+.navbar-tabs .nav-justified > li > a {
+    background-color:rgba(240, 255, 255, 0.8);
+    margin-right:4px !important;
+    //border-right: 1px solid rgba(255, 245, 255, .7);
+    color: #555555 !important;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 0.85em;
+}
+
+.navbar-tabs .nav > li > a {
+  padding:15px 0;
+}
+
+.navbar-tabs .nav-justified > li > a:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+.navbar-tabs .nav-justified > li:last-child > a {
+    margin-right:0px !important;
+}
+
+} /* end min-width */
+
+
+
+
+
+
+
+
+
+
+
+
+.main-content{background-color:#fff;}
+
+
+
+/****/
+
+footer.container {
+    //background: url("http://www.uncc.edu/sites/all/themes/unccedu/images/footer-bg.png") repeat-x scroll left top #fff;
+    //height: 110px;
+    padding-bottom:2.0rem;
+}
+#footer-utility-bar{background:#00703c; min-height:35px;}
+#footer-utility-bar ul {margin-bottom:0px;}
+
+#footer-utility-bar ul li a {
+    color: #ffffff;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+
+#footer-university-info #university-name a {
+    color: #00703c;
+    font-family: arial,helvetica,sans-serif !important;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: none !important;
+}
+#footer-university-info #university-address,
+#footer-university-info #university-legal {
+    color: #666666;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 14px !important;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+#footer-university-info #university-legal a {
+    color: #006633;
+    text-decoration: underline;
+}
+#footer-follow #social-title {
+    border-bottom: 0 none;
+    color: #666666 !important;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 1.0em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+div.social-icons,
+div.social-icons a {
+    display: inline-block;
+    height: 30px;
+    margin-right: 3px;
+    vertical-align: top;
+    width: 30px;
+}
+div.social-icons.facebook a {
+    background: url("http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/social-icons.png") no-repeat scroll 0 0 transparent;
+}
+div.social-icons.blog a {
+    background: url("http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/social-icons.png") no-repeat scroll 0 -30px transparent;
+}
+div.social-icons.twitter a {
+    background: url("http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/social-icons.png") no-repeat scroll 0 -60px transparent;
+}
+div.social-icons.flickr a {
+    background: url("http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/social-icons.png") no-repeat scroll 0 -90px transparent;
+}
+div.social-icons.youtube a {
+    background: url("http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/social-icons.png") no-repeat scroll 0 -120px transparent;
+}
+
+</style></head>
+
+  <body>
+
+
+
+        <header role="banner" id="unccedu-header">
+          <div class="container">
+            <div id="unccedu-header-watermark" class="row vertical-align">
+
+              <div id="uncc-logo" class="col-sm-4 col-md-2">
+                <img class="img-responsive" alt="Home" src="http://www.uncc.edu/sites/all/themes/unccedu/logo.png">
+              </div> <!-- /#uncc-logo -->
+
+              <div id="branding" class="col-sm-8 col-md-5">
+
+
+                      <a rel="home" title="Home" href="/" class="site-title"><span>UNC Charlotte Urban Institute</span></a>
+                      <p class="hidden-xs" id="subbrand-link">
+                        <a title="Division of Academic Affairs" href="http://provost.uncc.edu">Division of Academic Affairs</a>
+                      </p>
+
+
+              </div>
+
+              <div id="header-utility" class="col-md-5 hidden-sm">
+                <ul id="header-utility-links">
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/">Contact Us</a></li>
+                </ul>
+                <div class="header-utility-search-wrapper">
+                  <form class="form-inline site-search" method="get" action="http://ui.uncc.edu/my_search/google" >
+                    <div class="form-group">
+                      <input type="text" class="form-control utility-search-input" placeholder="Search ui.uncc.edu" name="q" aria-label="Search">
+                      <button type="submit" class="btn utility-search-button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+            </div> <!-- /#unccedu-header-watermark -->
+          </div> <!-- /.container -->
+        </header>
+
+
+        <!-- since this breaks the grid, we must completely custom style without bootstrap -->
+        <div class="banner-wrapper">
+
+            <div class="region region-banner">
+              <section>
+                <img class="img-responsive" width="1040" height="200" alt="York County landscape" title="York County landscape" src="http://ui.uncc.edu/sites/default/files/page-images/mastheads/york.jpg">
+              </section>
+            </div>
+
+        </div>
+
+
+          <div class="container main-nav">
+            <!-- nav class="navbar-default" -->
+            <nav class="navbar navbar-default navbar-tabs">
+                    <div class="container-fluid">
+                      <div class="navbar-header" style="padding-right:15px;">
+                        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                      </div>
+                      <div class="navbar-collapse collapse" id="navbar">
+                        <ul class="nav nav-justified">
+                          <li class="active"><a href="#">Home</a></li>
+                          <li><a href="#">Our region</a></li>
+                          <li><a href="#">Regional data</a></li>
+                          <li><a href="#">Issues</a></li>
+                          <li><a href="#">Articles</a></li>
+                          <li><a href="#">Programs</a></li>
+                          <li><a href="#">Resources</a></li>
+                          <li><a href="#">About us</a></li>
+                        </ul>
+
+                      </div><!--/.nav-collapse -->
+                    </div><!--/.container-fluid -->
+                  </nav>
+
+          </div><!-- /.container -->
+
+
+
+    <div class="container main-content">
+
+      <div class="blog-header">
+        <h1 class="blog-title">The Bootstrap Blog</h1>
+        <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Sample blog post</h2>
+            <p class="blog-post-meta">January 1, 2014 by <a href="http://getbootstrap.com/examples/blog/#">Mark</a></p>
+
+            <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+            <hr>
+            <p>Cum sociis natoque penatibus et magnis <a href="http://getbootstrap.com/examples/blog/#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+            <blockquote>
+              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </blockquote>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <h2>Heading</h2>
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <h3>Sub-heading</h3>
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <pre><code>Example code block</code></pre>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+            <h3>Sub-heading</h3>
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <ul>
+              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+              <li>Donec id elit non mi porta gravida at eget metus.</li>
+              <li>Nulla vitae elit libero, a pharetra augue.</li>
+            </ul>
+            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+            <ol>
+              <li>Vestibulum id ligula porta felis euismod semper.</li>
+              <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+              <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+            </ol>
+            <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+          </div><!-- /.blog-post -->
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="http://getbootstrap.com/examples/blog/#">GitHub</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">Twitter</a></li>
+              <li><a href="http://getbootstrap.com/examples/blog/#">Facebook</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+
+    <footer class="container">
+      <div class="row vertical-align" id="footer-utility-bar">
+
+            <div class="col-md-9 hidden-xs" id="footer-links">
+              <ul class="list-inline">
+                <li><img src="http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/crown-small.png" alt="Small UNC Charlotte Crown Logo"></li>
+                <li><a href="http://www.unccharlottealerts.com" target="_blank" title="Alerts and Advisories at UNC Charlotte">Alerts</a></li>
+                <li><a href="https://jobs.uncc.edu" title="Jobs at UNC Charlotte">Jobs</a></li>
+                <li><a href="http://www.uncc.edu/makeagift" title="Make a gift to UNC Charlotte">Make a Gift</a></li>
+                <li><a href="http://www.uncc.edu/directions" title="Directions to UNC Charlotte">Maps / Directions</a></li>
+                <li><a href="https://textonly.uncc.edu?1343005729" title="View this page as text only">Text Only</a></li>
+                <li><img width="20" height="20" src="http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/accessibility-icon.png" alt="accessibility icon" title="accessibilty icon"> <a href="http://www.uncc.edu/accessibility" title="Accessibility resources at UNC Charlotte">Accessibility</a></li>
+              </ul>
+            </div> <!--/#footer-links-->
+            <div class="col-md-3 hidden-xs" id="footer-search">
+              <form class="form-inline site-search" method="get" action="http://search.uncc.edu/website/" >
+                <div class="form-group">
+                  <input type="text" class="form-control utility-search-input" placeholder="Search uncc.edu" aria-label="Search">
+                  <button type="submit" class="btn utility-search-button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                </div>
+              </form>
+            </div> <!--/#footer-search-->
+
+      </div>
+      <div class="row">
+
+
+                <div class="col-md-8" id="footer-university-info">
+                      <div id="university-name"><a href="http://www.uncc.edu">The University of North Carolina at Charlotte</a></div>
+                      <div id="university-address">9201 University City Blvd, Charlotte, NC 28223-0001 - 704-687-8622</div>
+                      <div id="university-legal">&copy; 2015 UNC Charlotte | All Rights Reserved | <a href="http://legal.uncc.edu/termsofuse" title="">Terms of Use</a> | <a href="http://legal.uncc.edu/policies" title="">University Policies</a> | <a href="/contact" title="Contact Us">Contact Us</a></div>
+                </div> <!-- #footer-name -->
+                <div class="col-md-3 col-md-offset-1" id="footer-follow">
+                  <div id="social-title">Follow UNC Charlotte</div>
+                  <div class="facebook social-icons"><a href="http://www.facebook.com/UNCCharlotte" title="Facebook" target="_blank"><img width="20" height="20" src="http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/1x1.gif" alt="Facebook"></a></div>
+                  <div class="blog social-icons"><a href="http://unccltnews.blogspot.com/" title="Blogger" target="_blank"><img width="20" height="20" src="http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/1x1.gif" alt="Blogger"></a></div>
+                  <div class="twitter social-icons"><a href="http://twitter.com/UNCCharlotte" title="Twitter" target="_blank"><img width="20" height="20" src="http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/1x1.gif" alt="Twitter"></a></div>
+                  <div class="flickr social-icons"><a href="http://www.flickr.com/photos/stakeyourclaim/sets" title="Flickr" target="_blank"><img width="20" height="20" src="http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/1x1.gif" alt="Flickr"></a></div>
+                  <div class="youtube social-icons"><a href="http://www.youtube.com/unccharlottevideo" title="YouTube" target="_blank"><img width="20" height="20" src="http://ui.uncc.edu/sites/all/themes/unc_charlotte/img/1x1.gif" alt="YouTube"></a></div>
+                </div> <!-- #footer-follow -->
+
+
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Blog Template for Bootstrap_files/jquery.min.js"></script>
+    <script src="./Blog Template for Bootstrap_files/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./Blog Template for Bootstrap_files/ie10-viewport-bug-workaround.js"></script>
+
+
+</body></html>
