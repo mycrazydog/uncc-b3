@@ -184,6 +184,9 @@ h6, .h6 {
 
 
 body{background-color:#dddddd;}
+body.nav-blocks{
+	background-color:#fff;
+}
 
 
 header#unccedu-header {
@@ -271,7 +274,21 @@ NAV
 *************************************/
 .main-nav,
 .main-nav .container-fluid,
-.main-nav .navbar-collapse{padding:0px;}
+.main-nav .navbar-collapse{/*padding: 0px;*/}
+
+nav.navbar-blocks .container-fluid  {
+	padding-left:0px;
+	padding-right: 0px;
+}
+
+nav.navbar-blocks .container-fluid>.navbar-collapse,
+nav.navbar-blocks .container-fluid>.navbar-header,
+nav.navbar-blocks .container>.navbar-collapse,
+nav.navbar-blocks .container>.navbar-header{
+   	margin-left: -15px;
+   	margin-right: -15px;
+}
+
 .main-nav .navbar{margin-bottom:0px;border:none;}
 
 /*********/
@@ -283,7 +300,7 @@ NAV
 /*******navbar-tabs*******/
 .navbar-tabs {
     margin: auto;
-    //max-width: 960px;
+    /*max-width: 960px;*/
     position: relative;
     top: -47px;
     z-index: 499;
@@ -291,7 +308,7 @@ NAV
 .navbar-tabs .nav-justified > li > a {
     background-color:rgba(240, 255, 255, 0.8);
     margin-right:4px !important;
-    //border-right: 1px solid rgba(255, 245, 255, .7);
+    /*border-right: 1px solid rgba(255, 245, 255, .7);*/
     color: #555555 !important;
     font-family: arial,helvetica,sans-serif;
     font-size: 0.85em;
@@ -328,6 +345,12 @@ NAV
 }
 /*************/
 
+body.nav-blocks footer .row{
+	margin-right: 0px;
+	margin-left: 0px;	
+}
+
+
 } /* end min-width */
 
 
@@ -340,8 +363,8 @@ NAV
 /*************/
 
 footer.container {
-    //background: url("http://www.uncc.edu/sites/all/themes/unccedu/images/footer-bg.png") repeat-x scroll left top #fff;
-    //height: 110px;
+    /*background: url("http://www.uncc.edu/sites/all/themes/unccedu/images/footer-bg.png") repeat-x scroll left top #fff;
+    //height: 110px;*/
     padding-bottom:2.0rem;
 }
 #footer-utility-bar{background:#00703c; min-height:35px;}
@@ -410,7 +433,7 @@ div.social-icons.youtube a {
 
 </style></head>
 
-  <body>
+  <body class="nav-blocks">
 
 
 
